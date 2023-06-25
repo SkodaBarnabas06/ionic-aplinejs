@@ -1,0 +1,137 @@
+<style>
+
+</style>
+
+<ion-tabs>
+    <ion-tab tab="home">
+        <ion-nav id="home-nav"></ion-nav>
+        <div class="ion-page" id="home-nav">
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Home</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <h1>Page Home</h1>
+              <ion-nav-link router-direction="forward" component="page-home">
+                <ion-button>Go to Page Home</ion-button>
+              </ion-nav-link>
+              <h1>Page Menu</h1>
+              <ion-nav-link router-direction="forward" component="page-menu">
+                <ion-button>Go to Page Menu</ion-button>
+              </ion-nav-link>
+            </ion-content>
+          </div>
+    </ion-tab>
+    <ion-tab tab="radio">
+        <ion-nav id="radio-nav"></ion-nav>
+        <div class="ion-page" id="radio-nav">
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Home</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <h1>Page Home</h1>
+              <ion-nav-link router-direction="forward" component="page-home">
+                <ion-button>Go to Page Home</ion-button>
+              </ion-nav-link>
+              <h1>Page Menu</h1>
+              <ion-nav-link router-direction="forward" component="page-menu">
+                <ion-button>Go to Page Menu</ion-button>
+              </ion-nav-link>
+            </ion-content>
+          </div>
+    </ion-tab>
+    <ion-tab tab="library">
+        <ion-nav id="library-nav"></ion-nav>
+        <div class="ion-page" id="library-nav">
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Home</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <h1>Page Home</h1>
+              <ion-nav-link router-direction="forward" component="page-home">
+                <ion-button>Go to Page Home</ion-button>
+              </ion-nav-link>
+              <h1>Page Menu</h1>
+              <ion-nav-link router-direction="forward" component="page-menu">
+                <ion-button>Go to Page Menu</ion-button>
+              </ion-nav-link>
+            </ion-content>
+          </div>
+    </ion-tab>
+    <ion-tab tab="search">
+        <ion-nav id="search-nav"></ion-nav>
+        <div class="ion-page" id="search-nav">
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Home</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <h1>Page Home</h1>
+              <ion-nav-link router-direction="forward" component="page-home">
+                <ion-button>Go to Page Home</ion-button>
+              </ion-nav-link>
+              <h1>Page Menu</h1>
+              <ion-nav-link router-direction="forward" component="page-menu">
+                <ion-button>Go to Page Menu</ion-button>
+              </ion-nav-link>
+            </ion-content>
+          </div>
+    </ion-tab>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+            <ion-icon name="play-circle"></ion-icon>
+            Listen Now
+        </ion-tab-button>
+        <ion-tab-button tab="radio">
+            <ion-icon name="radio"></ion-icon>
+            Radio
+        </ion-tab-button>
+        <ion-tab-button tab="library">
+            <ion-icon name="library"></ion-icon>
+            Library
+        </ion-tab-button>
+        <ion-tab-button tab="search">
+            <ion-icon name="search"></ion-icon>
+            Search
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>
+
+<script>
+    document.addEventListener('ionViewDidEnter', () => {
+      const homeNav = document.querySelector('#home-nav');
+      const homePage = document.querySelector('#home-page');
+      homeNav.root = homePage;
+  
+      const radioNav = document.querySelector('#radio-nav');
+      const radioPage = document.querySelector('#radio-page');
+      radioNav.root = radioPage;
+  
+      const libraryNav = document.querySelector('#library-nav');
+      const libraryPage = document.querySelector('#library-page');
+      libraryNav.root = libraryPage;
+  
+      const searchNav = document.querySelector('#search-nav');
+      const searchPage = document.querySelector('#search-page');
+      searchNav.root = searchPage;
+    });
+  </script>
+  
